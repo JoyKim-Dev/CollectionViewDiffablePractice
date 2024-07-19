@@ -14,6 +14,8 @@
 		3517DE412C4AABC0000B4435 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3517DE402C4AABC0000B4435 /* Base */; };
 		3517DE492C4AAE7A000B4435 /* TravelTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517DE482C4AAE7A000B4435 /* TravelTalkViewController.swift */; };
 		3517DE4C2C4AB25E000B4435 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3517DE4B2C4AB25E000B4435 /* SnapKit */; };
+		3517DE4E2C4ABF98000B4435 /* ChattingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517DE4D2C4ABF98000B4435 /* ChattingData.swift */; };
+		3517DE502C4AD01C000B4435 /* DateFormatterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517DE4F2C4AD01C000B4435 /* DateFormatterManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		3517DE402C4AABC0000B4435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3517DE422C4AABC0000B4435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3517DE482C4AAE7A000B4435 /* TravelTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTalkViewController.swift; sourceTree = "<group>"; };
+		3517DE4D2C4ABF98000B4435 /* ChattingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChattingData.swift; sourceTree = "<group>"; };
+		3517DE4F2C4AD01C000B4435 /* DateFormatterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 			children = (
 				3517DE382C4AABBF000B4435 /* SettingViewController.swift */,
 				3517DE482C4AAE7A000B4435 /* TravelTalkViewController.swift */,
+				3517DE4F2C4AD01C000B4435 /* DateFormatterManager.swift */,
+				3517DE4D2C4ABF98000B4435 /* ChattingData.swift */,
 				3517DE3D2C4AABC0000B4435 /* Assets.xcassets */,
 				3517DE3F2C4AABC0000B4435 /* LaunchScreen.storyboard */,
 				3517DE342C4AABBF000B4435 /* AppDelegate.swift */,
@@ -145,9 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3517DE502C4AD01C000B4435 /* DateFormatterManager.swift in Sources */,
 				3517DE392C4AABBF000B4435 /* SettingViewController.swift in Sources */,
 				3517DE352C4AABBF000B4435 /* AppDelegate.swift in Sources */,
 				3517DE492C4AAE7A000B4435 /* TravelTalkViewController.swift in Sources */,
+				3517DE4E2C4ABF98000B4435 /* ChattingData.swift in Sources */,
 				3517DE372C4AABBF000B4435 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
