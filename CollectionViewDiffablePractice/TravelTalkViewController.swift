@@ -13,22 +13,13 @@ class TravelTalkViewController: UIViewController {
     enum Section:CaseIterable {
         case all
     }
-    
-    let textField = {
-        let textField = UITextField()
-        textField.attributedPlaceholder = NSAttributedString(string: "친구 이름을 검색해보세요", attributes: [.foregroundColor: UIColor.lightGray])
-        
-        textField.backgroundColor = .lightGray.withAlphaComponent(0.2)
-        textField.layer.cornerRadius = 6
-        return textField
+
+    let searchBar = {
+        let searchBar = UISearchBar()
+        searchBar.placeholder = "친구 이름을 검색해보세요"
+        return searchBar
     }()
-    
-    let textFieldImage = {
-        let image = UIImageView()
-        image.image = UIImage(systemName: "magnifyingglass")!
-        image.tintColor = .gray
-        return image
-    }()
+
     lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout())
     var dataSource: UICollectionViewDiffableDataSource<Section, Chat>!
     
@@ -40,29 +31,24 @@ class TravelTalkViewController: UIViewController {
         updateSnapshot()
         configHierarchy()
         configLayout()
+    
     }
     
     func configHierarchy(){
-        view.addSubview(textField)
         view.addSubview(collectionView)
-        view.addSubview(textFieldImage)
+        view.addSubview(searchBar)
     }
     
     func configLayout() {
         
-        textField.snp.makeConstraints { make in
+        searchBar.snp.makeConstraints { make in
             make.top.horizontalEdges.equalTo(view.safeAreaLayoutGuide).inset(20)
             make.height.equalTo(30)
         }
         
-        textFieldImage.snp.makeConstraints { make in
-            make.verticalEdges.equalTo(textField)
-            make.width.equalTo(textFieldImage.snp.height)
-            make.leading.equalTo(textField)
-        }
         collectionView.snp.makeConstraints { make in
             make.horizontalEdges.bottom.equalTo(view.safeAreaLayoutGuide)
-            make.top.equalTo(textField.snp.bottom).offset(10)
+            make.top.equalTo(searchBar.snp.bottom).offset(10)
         }
     }
     
@@ -135,3 +121,4 @@ class TravelTalkViewController: UIViewController {
         }
     }
 }
+
